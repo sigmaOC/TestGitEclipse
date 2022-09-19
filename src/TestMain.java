@@ -15,6 +15,7 @@ public class TestMain {
 		for (int i = 0; i < 4; i++) {
 			System.out.println("Hello World");
 		}
+		System.out.println("C'est fini !!!");
 
 	}
 
