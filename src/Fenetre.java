@@ -42,7 +42,9 @@ public class Fenetre extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
-				System.out.println("Click Bouton ... ");
+				System.out.println("------------------");
+				System.out.println("-     bouton     -");
+				System.out.println("------------------");
 
 
 			}
