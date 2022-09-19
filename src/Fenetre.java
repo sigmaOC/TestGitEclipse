@@ -1,3 +1,8 @@
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 /**
@@ -11,6 +16,7 @@ import javax.swing.JFrame;
 public class Fenetre extends JFrame {
 
 	public VueFirst vue1;
+	public JButton bouton;
 
 	/**
 	 * 
@@ -24,9 +30,21 @@ public class Fenetre extends JFrame {
 	}
 
 	public void init() {
+		this.setLayout(new BorderLayout());
 		this.vue1 = new VueFirst();
+		this.bouton = new JButton("OK");
 
-		this.getContentPane().add(vue1);
+		this.getContentPane().add(vue1, BorderLayout.CENTER);
+		this.getContentPane().add(bouton, BorderLayout.SOUTH);
+
+		this.bouton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Click Bouton");
+
+			}
+		});
 
 		this.setVisible(true);
 		this.pack();
