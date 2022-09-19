@@ -37,6 +37,9 @@ public class VueFirst extends JPanel {
 			g.setColor(Color.black);
 			g.drawOval(deltaX + (espace + diam) * i, deltaY, diam, diam);
 
+			g.setColor(Color.yellow);
+			g.fillOval(deltaX + (espace + diam) * i, deltaY, diam, diam);
+
 			g.setColor(Color.red);
 			g.fillOval(deltaX + (espace + diam) * i + 5, deltaY + 5, diam - 10, diam - 10);
 
