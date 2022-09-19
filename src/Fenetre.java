@@ -1,4 +1,6 @@
 import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -34,6 +36,17 @@ public class Fenetre extends JFrame {
 
 		this.getContentPane().add(vue1, BorderLayout.CENTER);
 		this.getContentPane().add(bouton, BorderLayout.SOUTH);
+
+		this.bouton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("------------------");
+				System.out.println("-     bouton     -");
+				System.out.println("------------------");
+
+			}
+		});
 
 		this.setVisible(true);
 		this.pack();
