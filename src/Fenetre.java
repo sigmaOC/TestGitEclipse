@@ -46,6 +46,7 @@ public class Fenetre extends JFrame {
 				System.out.println("-     bouton     -");
 				System.out.println("------------------");
 
+				bouton.setEnabled(false);
 
 			}
 		});
