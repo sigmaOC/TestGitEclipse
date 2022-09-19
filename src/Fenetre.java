@@ -10,6 +10,8 @@ import javax.swing.JFrame;
  */
 public class Fenetre extends JFrame {
 
+	public VueFirst vue1;
+
 	/**
 	 * 
 	 */
@@ -22,7 +24,12 @@ public class Fenetre extends JFrame {
 	}
 
 	public void init() {
+		this.vue1 = new VueFirst();
+
+		this.getContentPane().add(vue1);
+
 		this.setVisible(true);
+		this.pack();
 	}
 
 }
